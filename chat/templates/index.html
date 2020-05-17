@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{url_for('static',filename='styles.css')}}" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id='title'>WHAT DID YOU LEARN TODAY?</h1>
+    <div id='form-container'>
+        <form id='form' action='' method=post>
+            <input name='question' id='question' type='text' autofocus required pattern='[A-Za-z\s]{5,}'>
+            <button type='submit' class='button'>add</button>
+        </form>
+	<div id='my-journey' > <div id='lesson-container'></div></div> 
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+<script src="{{url_for('static',filename='chat.js')}}">
+</script>
+
+</html>

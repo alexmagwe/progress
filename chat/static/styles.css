@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fira;
+    src: url('fonts/firasans/FiraSans-Bold.otf')
+}
+
+@font-face {
+    font-family: oS-Bold;
+    src: url('fonts/OpenSans-Semibold.ttf')
+}
+
+@font-face {
+    font-family: fira4;
+    src: url('fonts/firasans/FiraSans-Four.otf')
+}
+
+@font-face {
+    font-family: firaHair;
+    src: url('fonts/firasans/FiraSans-Hair.otf')
+}
+
+@font-face {
+    font-family: openSansreg;
+    src: url('fonts/OpenSans-Regular.ttf')
+}
+
+@font-face {
+    font-family: openSansLight;
+    src: url('fonts/OpenSans-Light.ttf')
+}
+
+body {
+    padding: 3rem;
+}
+
+.button {
+    width: 10em;
+    margin: auto;
+    transition: all 0.3s;
+    height: 40px;
+    border-radius: 10px;
+    border-color: silver;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#title {
+    width: 100%;
+    text-align: center;
+    font-family: fira4;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+#question {
+    width: 100%;
+    margin: auto;
+    font-family: openSansreg;
+    font-size: 14px;
+    margin-bottom: 1em;
+    padding: 5px;
+}
+
+#lesson-container{
+	width:100%;
+    padding: 10px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-column-gap:1em;
+}
+
+.lesson{
+font-family:inherit;
+padding:10px;}
+#lesson-container>div {
+    font-family: oS-Bold;
+    font-size: 22px;
+    transition: all 0.3s;
+}
+.lesson span{
+display:block;
+font-size:12px;
+color:darkblue;
+margin-top:5px;
+
+}
+@media screen and (max-width:600px) {
+    #form {
+        width: 100%;
+    }
+    #question {
+        font-family: openSansreg;
+        font-size: 14px;
+        word-wrap: break-word;
+        margin-bottom: 1em;
+        padding: 5px;
+    }
+}
